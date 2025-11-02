@@ -1,9 +1,6 @@
 package com.hspedu.mhl.view;
 
-import com.hspedu.mhl.domain.Bill;
-import com.hspedu.mhl.domain.DiningTable;
-import com.hspedu.mhl.domain.Employee;
-import com.hspedu.mhl.domain.Menu;
+import com.hspedu.mhl.domain.*;
 import com.hspedu.mhl.service.BillService;
 import com.hspedu.mhl.service.DiningTableService;
 import com.hspedu.mhl.service.EmployeeService;
@@ -74,9 +71,15 @@ public class MHLView {
 
     //显示账单信息
     public void listBill(){
-        List<Bill> bills = billService.list();
-        System.out.println("\n编号\t\t菜品号\t\t菜品量\t\t金额\t\t桌号\t\t日期\t\t\t\t\t\t\t状态");
-        for (Bill bill : bills) {
+//        List<Bill> bills = billService.list();
+//        System.out.println("\n编号\t\t菜品号\t\t菜品量\t\t金额\t\t桌号\t\t日期\t\t\t\t\t\t\t状态");
+//        for (Bill bill : bills) {
+//            System.out.println(bill);
+//        }
+//        System.out.println("=============显示完毕=============");
+        List<MultiTableBean> multiTableBeans = billService.list2();
+        System.out.println("\n编号\t\t菜品号\t\t菜品量\t\t金额\t\t桌号\t\t日期\t\t\t\t\t\t\t状态\t\t菜品名");
+        for (MultiTableBean bill : multiTableBeans) {
             System.out.println(bill);
         }
         System.out.println("=============显示完毕=============");
