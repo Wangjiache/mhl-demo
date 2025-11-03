@@ -78,7 +78,7 @@ public class MHLView {
 //        }
 //        System.out.println("=============显示完毕=============");
         List<MultiTableBean> multiTableBeans = billService.list2();
-        System.out.println("\n编号\t\t菜品号\t\t菜品量\t\t金额\t\t桌号\t\t日期\t\t\t\t\t\t\t状态\t\t菜品名");
+        System.out.println("\n编号\t\t菜品号\t\t菜品量\t\t金额\t\t桌号\t\t日期\t\t\t\t\t\t\t状态\t\t菜品名\t\t价格");
         for (MultiTableBean bill : multiTableBeans) {
             System.out.println(bill);
         }
