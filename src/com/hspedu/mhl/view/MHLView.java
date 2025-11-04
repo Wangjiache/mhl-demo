@@ -257,7 +257,8 @@ public class MHLView {
                             System.out.println("你输入有误,请重新输入");
                     }
                 }
-                System.out.println("你退出了满汉楼");
+                System.out.println("你退出了满汉楼..");
+                System.out.println("你退出了满汉楼..");
             }
 
 }
