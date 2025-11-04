@@ -259,6 +259,7 @@ public class MHLView {
                 }
                 System.out.println("你退出了满汉楼..");
                 System.out.println("你退出了满汉楼..");
+                System.out.println("你退出了满汉楼..");
             }
 
 }
